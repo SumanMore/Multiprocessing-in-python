@@ -1,3 +1,5 @@
+When we pass data between processes then at that time we can use Queue object.
+
 import multiprocessing
 
 def calc_square(numbers, q):
@@ -14,3 +16,9 @@ if __name__ == "__main__":
 
     while q.empty() is False:
         print(q.get())
+        
+        
+In this example, at first create a function that cal square of a number and inserting in the queue
+Then we create a queue object and a process object then we start the process.
+And finally check whether the queue is empty or not.
+When we print the numbers, at first we print the value which is in front of the queue then next one and so on.
