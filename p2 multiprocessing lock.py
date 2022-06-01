@@ -1,3 +1,7 @@
+When we want that only one process is executed at a time in that situation Locks is use. 
+That means that time blocks other process from executing similar code.
+Lock will be released after the process gets completed.
+
 import time
 import multiprocessing
 
