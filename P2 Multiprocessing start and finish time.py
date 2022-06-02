@@ -23,7 +23,7 @@ if __name__ == "__main__":
   
  '''We must fence our main program under if __name__ == "__main__" or otherwise the multiprocessing module will complain. 
  This safety construct guarantees Python finishes analyzing the program before the sub-process is created.'''
-
+'''
 output:
 Program finished in 0.025785300007555634 seconds
 Sleeping for 0.5 seconds
@@ -36,7 +36,8 @@ We need to call the join() function on the two processes to make them run before
 This is because three processes are going on: p1, p2, and the main process. The main process is the one that keeps track of the time
 and prints the time taken to execute. We should make the line of finish_time run no earlier than the processes p1 and p2 are finished. 
 We just need to add this snippet of code immediately after the start() function calls:
- import multiprocessing
+'''
+import multiprocessing
 import time
  
 def task():
@@ -60,9 +61,11 @@ if __name__ == "__main__":
  
     print(f"Program finished in {finish_time-start_time} seconds")
   
+'''  
 OUTPUT:
 Sleeping for 0.5 seconds
 Sleeping for 0.5 seconds
 Finished sleeping
 Finished sleeping
 Program finished in 0.673008400015533 seconds
+'''
