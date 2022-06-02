@@ -1,6 +1,6 @@
 
 The multiprocessing package supports spawning processes. It refers to a function that loads and executes a new child processes. 
-For the child to terminate or to continue executing concurrent computing,then the current process hasto wait using an API, 
+For the child to terminate or to continue executing concurrent computing,then the current process has to wait using an API, 
 which is similar to threading module.
 When we work with Multiprocessing,at first we create process object. Then it calls a start() method.
 
