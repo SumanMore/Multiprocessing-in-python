@@ -1,6 +1,10 @@
+'''
+What Are the Queues Used For In Multiprocessing In Python?
+The Queue in Python is a data structure based on the FIFO (First-In-First-Out) concept.queue helps in communication between different processes
+in multiprocessing in Python. It provides the put() and get() methods to add and receive data from the queue. 
+'''
+
 #sharing data between processes using queue
-
-
 #When we pass data between processes then at that time we can use Queue object.
 
 import multiprocessing
@@ -21,7 +25,15 @@ if __name__ == "__main__": #parent process
         print(q.get()) #iterating through queue and printing the elements
         
         
-In this example, at first create a function that cal square of a number and inserting in the queue
+'''In this example, at first create a function that cal square of a number and inserting in the queue
 Then we create a queue object and a process object then we start the process.
 And finally check whether the queue is empty or not.
 When we print the numbers, at first we print the value which is in front of the queue then next one and so on.
+'''
+'''
+output
+4
+9
+25
+'''
+
