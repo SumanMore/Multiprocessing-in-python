@@ -32,3 +32,13 @@ In this example, at first we create one process which is process1, this process 
 time second process process2 is calculates the cube of a number.
 '''
 
+'''
+output
+square 4
+square 9
+square 64
+cube 8
+cube 27
+cube 512
+Done!
+'''
