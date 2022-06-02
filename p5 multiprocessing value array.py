@@ -1,3 +1,6 @@
+#sharing the data between the process using array and value
+
+
 import multiprocessing
 
 def calc_square(numbers, result, v):
