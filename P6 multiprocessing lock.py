@@ -1,3 +1,9 @@
+
+'''
+What Are The Locks Used For In Multiprocessing In Python?
+The lock is used for locking the processes while using multiprocessing in Python. With its acquire() and release() methods, you can lock and resume processes. 
+Thus, it allows you to execute specific tasks based on priority while stopping the other processes.'''
+
 '''When we want that only one process is executed at a time in that situation Locks is use. 
 That means that time blocks other process from executing similar code.
 Lock will be released after the process gets completed.'''
@@ -34,3 +40,8 @@ if __name__ == '__main__':
     d.join()
     w.join()
     print(balance.value) #prints the final balance
+
+  '''
+  output
+  200
+  '''
