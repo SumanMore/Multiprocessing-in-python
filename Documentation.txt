@@ -30,23 +30,17 @@ After the object construction, you must use the start() method to start the proc
 Lastly, you need to use the join() method to stop the current program’s execution until it executes the processes. 
 Thus, the program will first process objects. It will then move back to the following statements of the running program.
 
-
-Example that demonstrates how to do concurrent programming.
-import time
  
-def task():
-    print('Sleeping for 0.5 seconds')
-    time.sleep(0.5)
-    print('Finished sleeping')
-This function, task(), sleeps for 0.5 seconds and prints before and after the sleep:
 
 
 To create a process, we simply say so using the multiprocessing module:
 import multiprocessing
 p1 = multiprocessing.Process(target=task)
-p2 = multiprocessing.Process(target=task)
 
-The target argument to the Process() specifies the target function that the process runs.
-But these processes do not run immediately until we start them:
+
+to start the process
 p1.start()
-p2.start()
+
+to join the process
+p.join
+
