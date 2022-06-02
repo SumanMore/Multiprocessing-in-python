@@ -14,7 +14,7 @@ if __name__ == "__main__":
     p.start()
     p.join()
     print(result[:])
-output: [4,9,25]
+'''output: [4,9,25]'''
     
     
     
@@ -37,3 +37,4 @@ if __name__ == "__main__":
     p.join()
 
     print(v.value)
+'''output:5.67'''
