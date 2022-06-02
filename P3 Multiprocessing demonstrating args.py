@@ -1,6 +1,7 @@
-
+'''
 We can also pass arguments to the function using args keyword.
 In this example, we create two process that calculates the cube and squares of numbers and prints all results to the console.
+'''
 
 import time
 import multiprocessing
@@ -26,7 +27,8 @@ if __name__ == "__main__":
 
     print("Done!")
    
-We can also create more than one process at atime.
+'''We can also create more than one process at atime.
 In this example, at first we create one process which is process1, this process just calculates the square of a number and at the same
 time second process process2 is calculates the cube of a number.
+'''
 
