@@ -1,3 +1,4 @@
+#example=1
 from multiprocessing import Pool
 def f(n):
     return n*n
@@ -7,11 +8,17 @@ if __name__ == "__main__":
     result = p.map(f,[1,2,3,4,5])
     for n in result:
         print(n)
+'''
+output:
+1
+4
+9
+16
+25
+'''
         
         
-        
-        
-example 2:
+#example 2:
 from multiprocessing import Pool
 import time
 def f(n):
@@ -27,3 +34,7 @@ if __name__ == "__main__":
     p.join()
     print('pool took:',time.time()-t1)
     
+'''
+output:
+pool took: 0.43114209175109863
+'''
