@@ -34,13 +34,13 @@ def calc_cube(numbers):
 
 if __name__ == "__main__":
     arr = [2,3,8]
-    p1 = multiprocessing.Process(target=calc_square, args=(arr,))
-    p2 = multiprocessing.Process(target=calc_cube, args=(arr,))
+    p1 = multiprocessing.Process(target=calc_square, args=(arr,)) #creates process p1
+    p2 = multiprocessing.Process(target=calc_cube, args=(arr,))  #creates the process p2
 
-    p1.start()
-    p2.start()
+    p1.start() #it will start the process p1
+    p2.start()  #it will start the process p2
 
-    p1.join()
+    p1.join()  #it will wait until the execution of this process is over
     p2.join()
 
     print("Done!")
