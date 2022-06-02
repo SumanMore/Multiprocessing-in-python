@@ -31,45 +31,52 @@ processes.txt
 from multiprocessing import Process
 import os
 import math
-
+import time
 def calc():
-	for i in range(0, 70000000):
+	for i in range(100):
 		math.sqrt(i)
+		time.sleep(0.1)
 
-processes = []
+processes = [] #list to store all the processes
+num_processes=os.cpu_count()
 
-for i in range(os.cpu_count()):
-	print('registering process %d' % i)
-	processes.append(Process(target=calc))
+#creates the processes
+for i in range(num_processes):
+	p=Process(target=calc))
+	processes.append(p)
 
 for process in processes:
 	process.start()
 
 for process in processes:
-	process.join()
+	process.join() #block the main thread until all the processes are finished
+print('end main')	
  
  
  threads.txt
- from threading import Thread
+from threading import Thread
 import os
 import math
-
+import time
 def calc():
-	for i in range(0, 4000000):
+	for i in range(100):
 		math.sqrt(i)
+		time.sleep(0.1)
 
-threads = []
+threads = [] #list to store all the processes
+num_threads=10
 
-for i in range(os.cpu_count()):
-	print('registering thread %d' % i)
-	threads.append(Thread(target=calc))
+#creates the processes
+for i in range(num_threads):
+	p=Thread(target=calc))
+	threads.append(p)
 
-for thread in threads:
-	thread.start()
+for t in threads:
+	t.start()
 
-for thread in threads:
-	thread.join()
- 
+for t in threads:
+	t.join() #block the main thread until all the processes are finished
+print('end main')	
  
 
 
