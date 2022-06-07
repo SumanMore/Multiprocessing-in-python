@@ -4,14 +4,23 @@ Multiprocessing is the ability of a system to run multiple processors at one tim
 If you had a computer with a single processor, it would switch between multiple processes to keep all of them running.
 
 
+Python has three concurrency package
+>>thread
+>>threading
+>> Multiprocessing
+
+
 What is Multiprocessing?
 Multiprocessing in Python is a built-in package that allows the system to run multiple processes simultaneously. 
 It will enable the breaking of applications into smaller threads that can run independently. 
 The operating system can then allocate all these threads or processes to the processor to run them parallelly, thus improving the overall performance and efficiency.
+>>Multiprocessing supports the spawing process.
+>>offer local and remote concurrency.
 
 
 Difference between multiprocessing and threading?
 Threading:
+Thread- It is a light weight process. Its shares memory and state of parent.
 1.A new thread is spawned within the exixting process.
 2.Starting a thread is faster than starting a process.
 3.Memory is shared between all the threads.
@@ -20,6 +29,7 @@ Threading:
 6)Great for I/O bound tasks.
 
 Multiprocessing:
+Process- It is an instance of computer program that is being executed.Process use interprocess communication to communicate where as thread do not.
 1)A new process is started independent from other process.
 2)Starting a process is slower than starting a thread.
 3)Memory is not shared between the processes- Separate memory space
@@ -116,3 +126,5 @@ p1.start()
 to join the process
 p.join
 
+
+Note:Python forking module is responsible for creating/starting/terminating a process object using fork .
