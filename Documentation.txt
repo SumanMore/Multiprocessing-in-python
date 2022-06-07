@@ -128,3 +128,7 @@ p.join
 
 
 Note:Python forking module is responsible for creating/starting/terminating a process object using fork .
+
+
+take reference from here.
+https://docs.python.org/3/library/multiprocessing.html
