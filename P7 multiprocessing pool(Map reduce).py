@@ -1,3 +1,20 @@
+'''
+Pool module represents a pool of worker processes.
+Pool of worker
+
+It hides the complexity of concurrency programing.
+
+- You do not have to worry about managing processes or shared data or stats between workers.
+
+- You do not have to worry about distributing the work between workers. Ι
+
+- All you need to do is :
+
+• Create pool of X processes Assign a task to those processes.
+'''
+
+
+
 #example=1
 from multiprocessing import Pool
 def f(n):
